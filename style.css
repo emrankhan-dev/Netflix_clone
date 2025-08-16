@@ -1,0 +1,102 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #141414;
+    color: #fff;
+    padding: 30px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > h1 {
+    color: red;
+}
+
+nav > button {
+    background-color: red;
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin: 15px;
+}
+
+.hero input, .hero button {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+}
+
+.hero input {
+    background: none;
+    border: 1px solid gray;
+    margin-right: 5px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hero button {
+    background-color: red;
+    color: white;
+}
+
+.btn-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Cards */
+
+.movies-row > h3 {
+    margin-top: 50px;
+}
+
+.cards {
+    display: flex;
+    gap:12px;
+    margin-top: 20px;
+}
+
+.cards img {
+    width: 200px;
+    height: 300px;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.cards img:hover {
+    transform: scale(1.1);
+}
+
+
+
