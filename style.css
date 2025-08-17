@@ -18,11 +18,11 @@ nav {
     justify-content: space-between;
 }
 
-nav > h1 {
+nav>h1 {
     color: red;
 }
 
-nav > button {
+nav>button {
     background-color: red;
     color: white;
     padding: 7px 15px;
@@ -46,7 +46,8 @@ nav > button {
     margin: 15px;
 }
 
-.hero input, .hero button {
+.hero input,
+.hero button {
     font-weight: bold;
     font-size: 16px;
     padding: 15px;
@@ -77,13 +78,13 @@ nav > button {
 
 /* Cards */
 
-.movies-row > h3 {
+.movies-row>h3 {
     margin-top: 50px;
 }
 
 .cards {
     display: flex;
-    gap:12px;
+    gap: 12px;
     margin-top: 20px;
 }
 
@@ -101,37 +102,93 @@ nav > button {
 /* carousel */
 
 .carousel {
-  position: relative;
-  display: flex;
-  align-items: center;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .cards {
-  display: flex;
-  overflow-x: hidden;   /* hide scroll bar */
-  gap: 12px;
-  scroll-behavior: smooth;
+    display: flex;
+    overflow-x: hidden;
+    gap: 12px;
+    scroll-behavior: smooth;
 }
 
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 5rem;
-  /* background: rgba(0,0,0,0.5); */
-  background: none;
-  color: rgb(203, 200, 200);
-  border: none;
-  cursor: pointer;
-  padding: 5px 10px;
-  /* border-radius: 50%; */
-  z-index: 1;
-  font-weight: 100;
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    background: none;
+    color: rgb(203, 200, 200);
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    z-index: 1;
+    font-weight: 100;
 }
 
-.prev { left: 0;}
-.next { right: 0; }
+.prev {
+    left: 0;
+}
 
+.next {
+    right: 0;
+}
 
+/* Modal */
 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    height: 480px;
+    border-radius: 8px;
+    overflow: hidden;
+    color: white;
+    z-index: 1000;
+    background-color: rgb(27, 26, 26);
+    background-size: cover;
+    border: 1px solid rgb(50, 48, 48);
+}
+
+.modal-close-btn {
+    font-size: 42px;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+}
+
+.modal-desc {
+    position: absolute;
+    top: 45%;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.modal-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal p {
+    line-height: 1.2;
+}
+
+.modal-btn {
+    padding: 10px;
+    background-color: red;
+    border: none;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 4px;
+}
 
