@@ -38,8 +38,8 @@ nav > button {
 }
 
 .hero h1 {
-    font-size: 2rem;
-    margin-bottom: 15px;
+    font-size: 2.1rem;
+    margin-bottom: 20px;
 }
 
 .hero p {
@@ -97,6 +97,41 @@ nav > button {
 .cards img:hover {
     transform: scale(1.1);
 }
+
+/* carousel */
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  overflow-x: hidden;   /* hide scroll bar */
+  gap: 12px;
+  scroll-behavior: smooth;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 5rem;
+  /* background: rgba(0,0,0,0.5); */
+  background: none;
+  color: rgb(203, 200, 200);
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  /* border-radius: 50%; */
+  z-index: 1;
+  font-weight: 100;
+}
+
+.prev { left: 0;}
+.next { right: 0; }
+
 
 
 
