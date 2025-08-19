@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Netflix Clone</title>
 </head>
 
 <body>
@@ -18,9 +22,10 @@
     <section class="hero">
         <h1>Unlimited movies, TV shows, and more</h1>
         <p>Starts at USD 2.99. Cancel anytime.</p>
-        <p>Ready to watch? Enter your email to create or restart your membership.</p>
-        <div class="btn-area">
-            <input type="text" placeholder="Email address">
+        <p class="membership-line">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="input-area">
+            <input type="email" id="email" required>
+            <label for="email">Email address</label>
             <button>Get Started ></button>
         </div>
     </section>
@@ -38,8 +43,19 @@
         <h2>More Reasons to Join</h2>
     </section>
 
-    <section class="question-container"></section>
+    <section class="question-container">
         <h2>Frequently Asked Questions</h2>
+    </section>
+
+    <section class="membership-section">
+        <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+        <div>
+            <input type="text" placeholder="Email address">
+            <button>Get Started ></button>
+        </div>
+    </section>
+
+    <!-- Modal -->
     <div class="modal">
         <span class="modal-close-btn">&times;</span>
         <div class="modal-desc">
