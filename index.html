@@ -6,67 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Netflix Clone</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1>NETFLIX</h1>
-            <button>Sign In</button>
-        </nav>
-    </header>
-    <section class="hero">
-        <h1>Unlimited movies, TV shows, and more</h1>
-        <p>Starts at USD 2.99. Cancel anytime.</p>
-        <p class="membership-line">Ready to watch? Enter your email to create or restart your membership.</p>
-        <div class="input-area">
-            <input type="email" id="email" required>
-            <label for="email">Email address</label>
-            <button>Get Started ></button>
-        </div>
-    </section>
-    <section class="movies-row">
-        <h2>Trending Now</h2>
-        <div class="carousel">
-            <button class="prev">&#10094;</button>
-            <div class="cards">
-                <!-- Movie poster goes here -->
+
+    <div class="bg-netflix">
+            <header>
+                <nav>
+                    <h1>NETFLIX</h1>
+                    <button>Sign In</button>
+                </nav>
+            </header>
+            <section class="hero">
+                <h1>Unlimited movies, TV shows, and more</h1>
+                <p>Starts at USD 2.99. Cancel anytime.</p>
+                <p class="membership-line">Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="input-area">
+                    <input type="email" id="email" required>
+                    <label for="email">Email address</label>
+                    <button>Get Started</button>
+                </div>
+            </section>
             </div>
-            <button class="next">&#10095;</button>
-        </div>
-    </section>
-    <section class="feature-container">
-        <h2>More Reasons to Join</h2>
-    </section>
-
-    <section class="question-container">
-        <h2>Frequently Asked Questions</h2>
-    </section>
-
-    <section class="membership-section">
-        <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
-        <div>
-            <input type="text" placeholder="Email address">
-            <button>Get Started ></button>
-        </div>
-    </section>
-
-    <!-- Modal -->
-    <div class="modal">
-        <span class="modal-close-btn">&times;</span>
-        <div class="modal-desc">
-
-            <div class="modal-col">
-                <h1 class="modal-title"></h1>
-                <p class="modal-overview"></p>
-                <button class="modal-btn">Get Started ></button>
+            <div class="main-container">
+        <section class="movies-row">
+            <h2>Trending Now</h2>
+            <div class="carousel">
+                <button class="prev">&#10094;</button>
+                <div class="cards">
+                    <!-- Movie poster goes here -->
+                </div>
+                <button class="next">&#10095;</button>
             </div>
+        </section>
+        <section>
+            <h2>More Reasons to Join</h2>
+            <div class="feature-container"></div>
+        </section>
 
+        <section class="question-container">
+            <h2>Frequently Asked Questions</h2>
+        </section>
+
+        <section class="membership-container">
+            <h2>Ready to watch? Enter your email to create or restart your membership.</h2>
+            <div class="input-area">
+                <input type="email" id="email" required>
+                <label for="email">Email address</label>
+                <button>Get Started</button>
+            </div>
+        </section>
+
+        <section class="contactus-container">
+            <h2>Questions? Contact us.</h2>
+            <div class="contact-us-list"></div>
+        </section>
+
+        <section class="footer-container">
+            <select class="footer-select" id="footer-select">
+                <option value="English">English</option>
+            </select>
+
+            <p>Netflix Bangladesh</p>
+            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <span>Learn more.</span></p>
+        </section>
+        <!-- Modal -->
+        <div class="modal">
+            <span class="modal-close-btn"></span>
+            <div class="modal-desc">
+
+                <div class="modal-col">
+                    <h1 class="modal-title"></h1>
+                    <p class="modal-overview"></p>
+                    <button class="modal-btn">Get Started</button>
+                </div>
+            </div>
         </div>
+        <button id="scroll-btn">Get Started</button>
     </div>
     <script src="index.js" type="module"></script>
 </body>
